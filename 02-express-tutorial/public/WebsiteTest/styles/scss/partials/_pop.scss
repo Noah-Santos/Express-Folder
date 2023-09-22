@@ -1,0 +1,31 @@
+body{
+    // hides the image pop up until an image is clicked
+    .imagePop{
+        z-index: 6;
+        display: none;
+        background-color: #000000e3;
+        justify-content: center;
+        align-items: center;
+        position: absolute;
+        top: 0; left: 0;
+        height: 100%;
+        width: 100%;
+
+        // edits the text that pops up at the top of the screen
+        .popUpText{
+            color: white;
+            text-align: center;
+            opacity: .8;
+            position: absolute;
+            top: 0;
+            font-size: 3vw;
+        }
+
+        // edits the image that will pop up
+        .image{
+            display: none;
+            border-radius: 30px;
+            width: 40vw;
+        }
+    }
+}

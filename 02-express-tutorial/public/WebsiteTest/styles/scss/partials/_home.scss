@@ -1,0 +1,30 @@
+body {
+  // section for the content of the home page
+  section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+
+    // moves the home title and it's properties
+    .homeTitle {
+      color: white;
+      text-align: center;
+      font-size: 6vw;
+      font-family: drawText2;
+    }
+
+    // edits the picture of me on the home page
+    .homeImg {
+      width: 28vw;
+      border-radius: 100%;
+    }
+
+    // edits the text at the bottom of the home page
+    .homeText {
+      color: white;
+      text-align: center;
+      font-size: 3vw;
+    }
+  }
+}

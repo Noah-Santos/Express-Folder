@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Summer Recap</title>
+
+    <!-- links -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="./styles/css/main.css">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.4.js" integrity="sha256-a9jBBRygX1Bh5lt8GZjXDzyOB+bWve9EiO7tROUtj/E=" crossorigin="anonymous"></script>
+</head>
+<body class="w-100">
+    <!-- adds burger to the page -->
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" class="burger" id="burger">
+        <path fill="none" stroke="white" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5"
+            d="M3 6h18M3 12h18M3 18h18" />
+    </svg>
+    <!-- adds nav to be opened when page opens -->
+    <nav class="nav">
+        <div class="navContent w-100 h-75">
+            <!-- close button -->
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 12 12" class="x" id="close">
+                <path fill="white" d="M2.22 2.22a.749.749 0 0 1 1.06 0L6 4.939L8.72 2.22a.749.749 0 1 1 1.06 1.06L7.061 6L9.78 8.72a.749.749 0 1 1-1.06 1.06L6 7.061L3.28 9.78a.749.749 0 1 1-1.06-1.06L4.939 6L2.22 3.28a.749.749 0 0 1 0-1.06Z" />
+            </svg>
+            <!-- navigation links -->
+            <div class="containerLink">
+                <a href="./index2.html" class="navLink w-auto">Home Page</a>
+            </div>
+            <div class="containerLink">
+                <a href="./tokyo.html" class="navLink activeLink w-auto">Tokyo, Japan</a>
+            </div>
+            <div class="containerLink">
+                <a href="./kyoto.html" class="navLink w-auto">Kyoto, Japan</a>
+            </div>
+            <div class="containerLink">
+                <a href="./San Diego.html" class="navLink w-auto">San Diego, CA</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- main content of the tokyo page -->
+    <section class="w-100">
+        <div class="flexbox w-100">
+            <!-- title of the page -->
+            <div class="tokyoSection">
+                <h2 class="tokyoTitle">Tokyo, Japan</h2>
+            </div>
+
+            <!-- one section of text and image for Shibuya trip -->
+            <div class="tokyoSection">
+                <div class="textCont w-75">
+                    <p class="text">The famous Shibuya Square in Shibuya, Tokyo. It's basically the Japan equivalent of Times Square in New York.</p>
+                </div>
+                <div>
+                    <img src="./Images/Tokyo/Shibuya.JPG" alt="Shibuya Square" class="img">
+                </div>
+            </div>
+            
+            <!-- one section of text and images for meiji trip -->
+            <div class="tokyoSection">
+                <div class="textCont w-75">
+                    <p class="text">Meiji Jingu is the shrine for emperor Meiji and empress Shoken. The shrine is surrounded by lots of trees and the entrances are covered by a large torri.</p>
+                </div>
+                <div>
+                    <img src="./Images/Tokyo/Meiji Jingu 1.JPG" alt="Meiji Jingu 1" class="img active" id="meiji1">
+                    <img src="./Images/Tokyo/Meiji Jingu 2.JPG" alt="Meiji Jingu 2" class="img deactive" id="meiji2">
+                    <img src="./Images/Tokyo/Meiji Jingu 3.JPG" alt="Meiji Jingu 3" class="img deactive" id="meiji3">
+                </div>
+            </div>
+
+            <!-- section for ginza -->
+            <div class="tokyoSection">
+                <div class="textCont w-75">
+                    <p class="text">Ginza is a very popular shopping district. There are lots of cafes and multi-level shopping  buildings.</p>
+                </div>
+                <div>
+                    <img src="./Images/Tokyo/Ginza 2.JPG" alt="Ginza" class="img" id="ginza">
+                </div>
+            </div>
+
+            <!-- section for shirohige -->
+            <div class="tokyoSection">
+                <div class="textCont w-75">
+                    <p class="text">Shirohige was a shopping district with lots of sweets like cookies and cream puffs. There were also a lot of places to go thrifting.</p>
+                </div>
+                <div>
+                    <img src="./Images/Tokyo/Shirohige.JPG" alt="Shirohige" class="img" id="shirohige">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- image pop up that expands an image when clicked -->
+    <div class="imagePop">
+        <h3 class="popUpText">Click anywhere to close</h3>
+        <img src="" alt="pop up image" class="image">
+    </div>
+
+    <script src="./js/nav.js"></script>
+    <script src="./js/tokyo.js"></script>
+    <script src="./js/image.js"></script>
+</body>
+</html>

@@ -1,0 +1,17 @@
+// resets all spacing on document and changes font
+* {
+  margin: 0;
+  padding: 0;
+  font-family: drawText1;
+
+  // remove the scrollbar
+  ::-webkit-scrollbar {
+    display: none;
+  }
+}
+
+body,
+html {
+  height: 100%;
+  width: 100%;
+}
